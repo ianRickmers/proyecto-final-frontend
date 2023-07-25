@@ -10,9 +10,10 @@ export const Main = (props) => {
                 <p class="main__parrafo">{props.parrafo}</p>
             </div>
             <div class="main__pilares">
-                <Pillar titulo={props.tituloPilar1} parrafo={props.parrafoPilar1} />
-                <Pillar titulo={props.tituloPilar2} parrafo={props.parrafoPilar2} />
-                <Pillar titulo={props.tituloPilar3} parrafo={props.parrafoPilar3} />
+                <Pillar titulo={props.tituloPilar} parrafo={props.parrafoPilar} />
+                <button className="boton" onClick={props.get}>
+                    Click me for more cat facts
+                </button>
             </div>
         </main>
     )

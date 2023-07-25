@@ -4,12 +4,12 @@ export const Header = () => {
             <nav class="header__navbar">
                 <a class="header__logo" href="./index.html">
                     <img class="header__img" src="/images/cat_logo.webp"></img>
-                    <i class="header__link header__link--red" href="./index.html">Gatos Inc.</i>
+                    <i class="header__link header__link--red" href="./index.html">Cats Inc.</i>
                 </a>
-                <a class="header__link" href="./index.html">Inicio</a>
-                <a class="header__link" href="#">Productos</a>
-                <a class="header__link" href="#">Servicios</a>
-                <a class="header__link" href="#">Contáctanos</a>
+                <a class="header__link" href="./index.html">Home</a>
+                <a class="header__link" href="#">Products</a>
+                <a class="header__link" href="#">Services</a>
+                <a class="header__link" href="#">Contact us</a>
             </nav>
         </header>
     )

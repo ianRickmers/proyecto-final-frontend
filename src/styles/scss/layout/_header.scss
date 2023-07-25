@@ -1,5 +1,8 @@
 @use '../utils/variables';
 .header{
+    box-shadow: variables.$shadow;
+    margin-bottom: 10px;
+    background-color: white;
     &__navbar{
         display:flex;
         align-items: center;

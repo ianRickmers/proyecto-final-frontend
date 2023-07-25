@@ -1,5 +1,9 @@
 @use '../utils/variables';
 .footer{
+    background-color: rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+
     &__parrafo{
         text-align: center;
         margin-top: 10px;
@@ -8,6 +12,9 @@
     
     &__parrafo--secondary{
         color: variables.$secondary-color;
+        background-color: rgba(255, 255, 255, 0.932);
+        text-align: center;
+        border-radius: 10px;
     }
     
     &__lista{
@@ -17,11 +24,15 @@
         display:flex;
         justify-content: space-around;
         list-style-type: none;
+        
     }
     
     &__link{
         text-decoration: none;
         color: variables.$secondary-color;
+        background-color: rgba(255, 255, 255, 0.932);
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
@@ -29,7 +40,6 @@
 
     .footer{
         &__parrafo{
-            text-align: left;
             flex-grow: 3;
             padding-left: 1%;
         }
