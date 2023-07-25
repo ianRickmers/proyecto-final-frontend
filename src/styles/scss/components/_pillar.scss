@@ -1,0 +1,13 @@
+@use '../utils/variables';
+.pilar{
+    box-shadow: variables.$shadow;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 1%;
+}
+
+@media screen and (min-width:768px){
+    .pilar{
+        width: 30%;
+    }
+}

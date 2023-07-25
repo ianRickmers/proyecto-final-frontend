@@ -1,0 +1,42 @@
+@use '../utils/variables';
+.footer{
+    &__parrafo{
+        text-align: center;
+        margin-top: 10px;
+        margin: 10px;
+    }
+    
+    &__parrafo--secondary{
+        color: variables.$secondary-color;
+    }
+    
+    &__lista{
+        border-top: variables.$gray-border-top;
+        padding-top: 1%;
+        padding-left: 0px;
+        display:flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: variables.$secondary-color;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .footer{
+        &__parrafo{
+            text-align: left;
+            flex-grow: 3;
+            padding-left: 1%;
+        }
+        &__lista{
+            border-top: none;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+    }
+}

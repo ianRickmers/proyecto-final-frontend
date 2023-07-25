@@ -1,0 +1,67 @@
+@use '../utils/variables';
+.header{
+    &__navbar{
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    &__logo{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+    
+    }
+    
+    &__img{
+        height: 40px;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: black;
+    }
+    
+    &__link--red{
+        color: white;
+        background-color: white;
+        text-shadow: variables.$text-outline-red;
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:768px){
+
+    .header{
+        &__navbar{
+            justify-content: flex-start;
+        }
+
+        &__logo{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            flex-grow: 1;
+        }
+
+        &__link{
+            text-decoration: none;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        &__link--red{
+            display: flex;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__img{
+            height: 60px;
+        }
+    }
+}

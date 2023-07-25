@@ -1,0 +1,25 @@
+.carousel {
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
